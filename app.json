@@ -70,12 +70,12 @@
       },
       "UPSTREAM_REPO": {
         "description": "If you dont know this, Leave as it is",
-        "value": "https://github.com/golujha9936/strangerbot",
+        "value": "https://github.com/TEAM-PHONIX-BOTS/Nikki",
         "required": true
       },
       "UPSTREAM_BRANCH": {
         "description": "Upstream Repo's Branch Name",
-        "value": "master",
+        "value": "main",
         "required": true
       }
     },
