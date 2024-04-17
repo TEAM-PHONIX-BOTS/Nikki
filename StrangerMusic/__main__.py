@@ -48,7 +48,7 @@ async def init():
     await app.start()
     for all_module in ALL_MODULES:
         importlib.import_module("StrangerMusic.plugins" + all_module)
-    LOGGER("Strangermusic.plugins").info(
+    LOGGER("Stranger.plugins").info(
         "Successfully Imported Modules "
     )
     await userbot.start()
@@ -58,17 +58,17 @@ async def init():
             "http://docs.evostream.com/sample_content/assets/sintel1m720p.mp4"
         )
     except NoActiveGroupCall:
-        LOGGER("StrangerMusic").error(
+        LOGGER("Stranger").error(
             "[ERROR] - \n\nPlease turn on your Logger Group's Voice Call. Make sure you never close/end voice call in your log group"
         )
         sys.exit()
     except:
         pass
     await Stranger.decorators()
-    LOGGER("StrangerMusic").info("Stranger Music Bot Started Successfully")
+    LOGGER("StrangerMusic").info("Yukki Music Bot Started Successfully")
     await idle()
 
 
 if __name__ == "__main__":
     loop.run_until_complete(init())
-    LOGGER("StrangerMusic").info("Stopping Stranger Music Bot! GoodBye")
+    LOGGER("StrangerMusic").info("Stopping Yukki Music Bot! GoodBye")
